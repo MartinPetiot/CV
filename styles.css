@@ -1,0 +1,464 @@
+/* STYLE COMMUN */
+
+body {
+    font-family: 'Roboto', arial;
+    font-size: 16px;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+.btn.btn-color {
+    background-color: #24125F
+    /*#543a8d*/
+    ;
+    opacity: 1;
+    color: white;
+    transition: 250ms;
+}
+
+.btn.btn-color:hover {
+    background-color: #24125F;
+    color: white;
+    transform: scale(1.1);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #24125F;
+}
+
+.nav-item {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#home .jumbotron {
+    background-image: url(data/images/nain_1.jpg);
+    background-size: cover;
+    height: 400px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#home .title {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    display: block;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.9);
+    width: 100%;
+}
+
+#home h1 {
+    font-family: 'Vampiro One', cursive;
+    margin: 0;
+}
+
+#home .lead {
+    margin: 0;
+    font-size: 200%;
+}
+
+#home.homepage .lead {
+    font-size: 100%;
+    margin-bottom: 20px;
+}
+
+#home.bg-team .jumbotron {
+    background-image: url("data/images/nain_3.jpg");
+}
+#home.homepage .jumbotron{
+    background-image: url("data/images/nain_5.jpg");
+}
+#home.bg-catalogue .jumbotron{
+    background-image: url("data/images/nain_7.jpg");
+}
+#home.bg-contact .jumbotron{
+    background-image: url("data/images/nain_6.jpg");
+}
+#home.bg-panier .jumbotron{
+    background-image: url("data/images/nain_4.jpg");
+}
+
+
+/*CSS Header*/
+
+header {
+    background-image: url("data/images/bonhomme_courses.jpg");
+    background-position: top;
+    background-size: cover;
+    /* rate: 100%; */
+    max-width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+header .card-overlay .card-img {
+    background-color: white;
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+footer {
+    background-image: url("data/images/bonhomme_courses.jpg");
+    background-position: bottom;
+    background-size: cover;
+    max-width: 100%;
+    height: 250px;
+    padding-top: 50px;
+}
+
+.card {
+    border: none;
+}
+
+header .p-card-title,
+header .p-card-text {
+    font-family: 'Vampiro One';
+    font-size: 32px;
+}
+
+
+/*CSS Footer*/
+
+.container .row .card-img {
+    background-color: white;
+    border-radius: 50%;
+    max-width: auto;
+    max-height: auto;
+}
+
+.address {
+    font-size: 14px;
+    text-align: right;
+    flex-grow: 1;
+}
+
+.follow-us {
+    font-size: 14px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.coordonnees {
+    text-align: center;
+    flex-grow: 3;
+}
+
+.tel,
+.email {
+    text-align: center;
+    font-style: italic;
+    font-size: 12px;
+}
+
+footer svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* NICO CV */
+
+#about {
+    background-color: #EF5730;
+    padding-top: 50px;
+    color: white;
+}
+
+#about .list-group-item {
+    background-color: transparent;
+}
+
+#skills {
+    padding: 50px 0;
+}
+
+#skills h2 {
+    color: #EF5730;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills .skill {
+    margin-bottom: 24px;
+    height: 60px;
+}
+
+#skills .skill-icon {
+    width: 44px;
+    margin-right: 24px;
+    color: #EF5730;
+}
+
+#skills .progress-bar {
+    background-color: #24125F;
+}
+
+#exp {
+    padding: 50px 0;
+    background-color: #ff895c;
+}
+
+#exp h2 {
+    color: white;
+}
+
+#exp .table td,
+#exp .table th {
+    border: none;
+    border-bottom: 1px solid #EF5730;
+}
+
+#exp .table tr:last-child td,
+#exp .table tr:last-child th {
+    border: none;
+}
+
+#exp .table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.275);
+    transition: 250ms;
+}
+
+#hobbies {
+    background-color: #EF5730;
+    padding: 50px 0;
+    color: white;
+}
+
+#hobbies ol {
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#hobbies li a {
+    color: white;
+    opacity: 0.8;
+    transition: 250ms;
+}
+
+#hobbies li a:hover {
+    color: #24125F;
+    opacity: 1;
+}
+
+.modal .modal-header {
+    color: #EF5730;
+}
+
+.modal .modal-img img {
+    width: 100%;
+}
+
+
+/*************************************************/
+
+
+/************TEAM********************************/
+
+#team {
+    padding: 100px 0;
+}
+
+#team .card {
+    /* border: 2px solid red; */
+    text-align: center;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+#team .card-body {
+    padding-top: 10px;
+}
+
+#team .card-title {
+    color: #EF5730;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+#team .card-text {
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+#team .my-img-card {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    #home h1 {
+        font-size: 200%;
+    }
+    #home .lead {
+        font-size: 150%;
+    }
+    #team {
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+    #team .my-img-card {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1200px) {
+    #about .about-image {
+        border-radius: 50% !important;
+    }
+}
+
+
+/*Page index*/
+
+.carousel {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.d-block {
+    border-radius: 25px;
+}
+
+#slider_produit {
+    margin: 50px 0;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #bd2130;
+    width: 30px;
+    height: 30px;
+}
+.carousel-indicators li{
+  background-color: #bd2130;
+}
+
+
+/*Page products*/
+
+#produit1 .card {
+    margin: 15px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#produit2 .card {
+    margin: 15px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#produit1 {
+    padding-top: 50px;
+}
+
+#produit2 {
+    padding-bottom: 50px;
+}
+
+#produit1 .card,
+#produit2 .card {
+    height: calc(100% - 30px);
+}
+
+#produit1 .bigcard {
+    height: calc(100% - 30px);
+}
+
+
+/*Page contact*/
+
+#form {
+    background-color: #EF5730;
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#form .form-check,
+#form .form-group,
+#form .form-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#form .form-group .form-control {
+    margin-bottom: 10px;
+}
+
+
+/* Page produit*/
+
+#home .achat {
+    margin: 0 15px 30px 0;
+}
+
+#home.bg-produit .jumbotron {
+    background-image: url("data/images/nain_2.jpg");
+}
+
+#produit {
+    padding: 50px 0;
+}
+
+#produit .image-produit img {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        text-align: center;
+    }
+    header .p-card-title {
+        font-size: 30px;
+    }
+    header .p-card-text {
+        font-size: 20px;
+    }
+    header .card-img {
+        width: 150px;
+        height: 150px;
+    }
+    footer .follow-us h3,
+    footer .coordonnees h3,
+    footer .address h3 {
+        font-size: 18px;
+    }
+    footer .follow-us,
+    footer .coordonnees,
+    footer .address {
+        font-size: 14px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    header nav .nav {
+        display: flex;
+    }
+    #burger-icone {
+        display: none !important;
+    }
+    header {
+        background-color: #ffffff !important;
+    }
+    header .container .burger-menu {
+        display: none !important;
+    }
+    .margin-img {
+        margin-left: 8%;
+    }
+}
